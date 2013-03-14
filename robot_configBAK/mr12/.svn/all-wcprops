@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/m3ens/!svn/ver/26/trunk/robot_config/mr12
+END
+m3humanoid_right_arm_mr12.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/m3ens/!svn/ver/4/trunk/robot_config/mr12/m3humanoid_right_arm_mr12.yml
+END
+m3humanoid_right_arm_head_mr12.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/m3ens/!svn/ver/26/trunk/robot_config/mr12/m3humanoid_right_arm_head_mr12.yml
+END
+m3humanoid_head_mr12.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/m3ens/!svn/ver/14/trunk/robot_config/mr12/m3humanoid_head_mr12.yml
+END
+m3humanoid_shm12.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/m3ens/!svn/ver/31/trunk/robot_config/mr12/m3humanoid_shm12.yml
+END

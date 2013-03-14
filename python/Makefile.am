@@ -1,0 +1,15 @@
+
+#pkgpython_PYTHON = \
+#	m3ens/__init__.py\
+#	m3ens/example_pb2.py\
+#	m3ens/example.py
+
+#	m3ens/example_pb2.py
+#	m3ens/example.py
+
+dist_bin_SCRIPTS = \
+	scripts/m3ens_demo_head.py\
+	scripts/m3ens_demo_led_matrix.py\
+	scripts/m3ens_demo_postures.py
+
+#	scripts/m3ens_example.py

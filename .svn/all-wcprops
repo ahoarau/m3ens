@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/m3ens/!svn/ver/30/trunk
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/m3ens/!svn/ver/2/trunk/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/m3ens/!svn/ver/2/trunk/AUTHORS
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/m3ens/!svn/ver/2/trunk/INSTALL
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/m3ens/!svn/ver/2/trunk/ChangeLog
+END
+THANKS
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/m3ens/!svn/ver/2/trunk/THANKS
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/m3ens/!svn/ver/2/trunk/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/m3ens/!svn/ver/2/trunk/Makefile.am
+END
+m3ens.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/m3ens/!svn/ver/2/trunk/m3ens.pc.in
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/m3ens/!svn/ver/2/trunk/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/m3ens/!svn/ver/2/trunk/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/m3ens/!svn/ver/2/trunk/README
+END

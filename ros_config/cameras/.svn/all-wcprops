@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/m3qa/!svn/ver/240/trunk/ros_config/cameras
+END
+pg0_800x600_calib.yml.iss
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg0_800x600_calib.yml.iss
+END
+haarcascade_frontalface_alt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/m3qa/!svn/ver/240/trunk/ros_config/cameras/haarcascade_frontalface_alt.xml
+END
+pg1_800x600_calib.yml.iss
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg1_800x600_calib.yml.iss
+END
+pg2_800x600_calib.yml.iss
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg2_800x600_calib.yml.iss
+END
+pg0_800x600_calib.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg0_800x600_calib.yml
+END
+point_grey_0.yml.uta
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_0.yml.uta
+END
+pg1_800x600_calib.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg1_800x600_calib.yml
+END
+point_grey_1.yml.uta
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_1.yml.uta
+END
+pg2_800x600_calib.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg2_800x600_calib.yml
+END
+point_grey_0.yml.iss
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_0.yml.iss
+END
+point_grey_1.yml.iss
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_1.yml.iss
+END
+point_grey_2.yml.iss
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_2.yml.iss
+END
+point_grey_0.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_0.yml
+END
+point_grey_1.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_1.yml
+END
+point_grey_2.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/point_grey_2.yml
+END
+pg0_800x600_calib.yml.uta
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg0_800x600_calib.yml.uta
+END
+haarcascade_profileface.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/m3qa/!svn/ver/240/trunk/ros_config/cameras/haarcascade_profileface.xml
+END
+pg1_800x600_calib.yml.uta
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/m3qa/!svn/ver/234/trunk/ros_config/cameras/pg1_800x600_calib.yml.uta
+END

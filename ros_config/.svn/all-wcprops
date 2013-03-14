@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/m3ens/!svn/ver/29/trunk/ros_config
+END
+m3_launch.launch
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/m3ens/!svn/ver/2/trunk/ros_config/m3_launch.launch
+END
+manifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/m3ens/!svn/ver/2/trunk/ros_config/manifest.xml
+END
+m3_rviz.vcg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/m3ens/!svn/ver/2/trunk/ros_config/m3_rviz.vcg
+END
+joy.launch
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/m3ens/!svn/ver/29/trunk/ros_config/joy.launch
+END
+mekabot.launch
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/m3ens/!svn/ver/2/trunk/ros_config/mekabot.launch
+END

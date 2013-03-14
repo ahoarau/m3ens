@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/m3ens/!svn/ver/3/trunk/src/m3ens/controllers
+END
+example.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/m3ens/!svn/ver/3/trunk/src/m3ens/controllers/example.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/m3ens/!svn/ver/3/trunk/src/m3ens/controllers/Makefile.am
+END
+factory_proxy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/m3ens/!svn/ver/2/trunk/src/m3ens/controllers/factory_proxy.cpp
+END
+example.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/m3ens/!svn/ver/2/trunk/src/m3ens/controllers/example.cpp
+END
+example.proto
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/m3ens/!svn/ver/2/trunk/src/m3ens/controllers/example.proto
+END
