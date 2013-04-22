@@ -1,3 +1,0 @@
-rgb: /camera/rgb/image_rect_color
-depth: /camera/depth/image_rect
-depth_registered: /camera/depth_registered/image_rect
