@@ -252,18 +252,19 @@ class HeadBehaviors:
 	def __init__(self):
 		pass
 	
-	def start(self,proxy,bot,beh):
+	def start(self,proxy,bot,beh,csp=None):
 	
 		led_name=proxy.get_available_components('m3led_matrix_ec')[0]
 		self.led=m3l.M3LedMatrixEc(led_name)
 		self.led.enable_leds()
 		proxy.publish_command(self.led)
-	
-		csp_name=proxy.get_available_components('m3head_s2csp_ctrl')[0]
-		csp=m3csp.M3HeadS2CSPCtrl(csp_name)
-		proxy.publish_command(csp)
-		proxy.publish_param(csp)
-	
+		if csp is None:
+			csp_name=proxy.get_available_components('m3head_s2csp_ctrl')[0]
+			self.csp=m3csp.M3HeadS2CSPCtrl(csp_name)
+		else:
+			self.csp = csp
+		proxy.publish_command(self.csp)
+		proxy.publish_param(self.csp)
 		if self.led is not None:
 			self.led.enable_leds()
 		#print 'Use facetracking (Ros services must be started in advance) [n]?'
