@@ -13,12 +13,12 @@ param:
     k_p: 1.0
     k_slew_max: 1200.0
   pid_torque:
-    k_d: 0.0
+    k_d: -0.01
     k_des_max: 10000.0
     k_des_min: -10000.0
-    k_i: 0.0
-    k_i_limit: 1.0
-    k_i_range: 15000.0
+    k_i: -0.002
+    k_i_limit: 0.1
+    k_i_range: 1500.0
     k_p: -1.25
     k_slew_max: 0.0
   traj_current:

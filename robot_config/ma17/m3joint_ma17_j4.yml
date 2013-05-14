@@ -1,15 +1,15 @@
 actuator_component: m3actuator_ma17_j4
 brake: none
-calibration_date: Mon Apr 29 07:50:25 2013
+calibration_date: Mon May 13 08:38:37 2013
 control_component: m3ctrl_simple_ma17_j4
 name: m3joint_ma17_j4
 param:
-  kq_d: -1.5
+  kq_d: -3.0
   kq_g: 1.0
   kq_i: 0.0
   kq_i_limit: 0.0
   kq_i_range: 0.0
-  kq_p: -60.0
+  kq_p: -100.0
   kt_d: 0.0
   kt_i: 0.0
   kt_i_limit: 0.0

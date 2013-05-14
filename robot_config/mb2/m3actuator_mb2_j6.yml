@@ -35,7 +35,7 @@ calib:
     max_pwm_duty: 2048.0
     max_winding_temp: 155.0
     mechanical_time_constant: 3.6400000000000001
-    model_type: model_v1
+    model_type: model_v2
     name: Magmotor S28-k-100
     no_load_current: 164.80000000000001
     no_load_speed: 871.39999999999998

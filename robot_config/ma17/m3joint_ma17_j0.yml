@@ -5,7 +5,8 @@ control_component: m3ctrl_simple_ma17_j0
 name: m3joint_ma17_j0
 param:
   kq_d: -60.0
-  kq_g: 1.0700000000000001
+  kq_d_pose: -100.0  
+  kq_g: 1.0
   kq_i: 0.0
   kq_i_limit: 0.0
   kq_i_range: 0.0
