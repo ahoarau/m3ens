@@ -30,7 +30,6 @@ import m3.component_factory as m3f
 import m3.unit_conversion as m3u
 import m3.joint_zlift as m3z
 import m3.pwr as m3rt
-import Numeric as nu
 import m3.pwr
 import math
 import random

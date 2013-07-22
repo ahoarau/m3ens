@@ -27,7 +27,6 @@ import m3.toolbox as m3t
 import time
 from PIL import Image
 from PIL import ImageDraw
-import Numeric as nu
 import math
 
 # ########################################

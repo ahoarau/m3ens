@@ -28,7 +28,6 @@ import m3.toolbox as m3t
 import m3.toolbox_beh as m3b
 import m3.component_factory as m3f
 import m3.unit_conversion as m3u
-import Numeric as nu
 import m3.pwr
 import math
 import random
