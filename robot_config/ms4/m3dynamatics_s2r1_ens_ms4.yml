@@ -75,7 +75,7 @@ links:
   d: 0.0
   joint_offset: 0.0
 name: m3dynamatics_s2r1_ens_ms4
-ndof: 8
+ndof: 5
 param:
   payload_com:
   - 0.0
