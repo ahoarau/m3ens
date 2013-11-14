@@ -12,6 +12,8 @@ factory_py_libs:
 
 sys_test: ens
 
+right_hand_name: m3hand_mh16
+
 rt_components:
   pwr:
     m3pwr_pwr028: m3pwr
