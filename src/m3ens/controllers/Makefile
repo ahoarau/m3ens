@@ -269,7 +269,7 @@ libm3enscontrollersinclude_HEADERS = \
 	example.pb.h 
 
 lib_LTLIBRARIES = libm3enscontrollers.la 
-libm3enscontrollers_la_LIBADD = -lprotobuf -lm3base -lorocos-kdl -lm3hardware -lm3chains -lm3toolbox -lyaml-cpp  $(PROTOBUF_LIBS) $(YAMLCPP_LIBS) $(EIGEN2_LIBS) 
+libm3enscontrollers_la_LIBADD = -lprotobuf -lm3base -lorocos-kdl -lm3hardware -lm3chains -lm3toolbox -lyaml-cpp -lm3robots $(PROTOBUF_LIBS) $(YAMLCPP_LIBS) $(EIGEN2_LIBS) 
 libm3enscontrollers_la_LDFLAGS = -version-info 0:1:0 -module \
 	-L$(ros_dir)/lib \
 	-L$(rtai_lib)

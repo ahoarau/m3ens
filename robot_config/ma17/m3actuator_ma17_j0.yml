@@ -14,8 +14,8 @@ calib:
       order: 3
       type: diff_butterworth
     thetadotdot_df:
-      cutoff_freq: 80
-      order: 1
+      cutoff_freq: 20#8#80
+      order: 3
       type: diff_butterworth
     type: df_chain
   current:

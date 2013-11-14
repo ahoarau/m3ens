@@ -6,3 +6,6 @@ build
 *.pyc
 *~
 *.kde*
+.libs
+*temps.yml
+.cache
