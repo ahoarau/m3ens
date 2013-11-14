@@ -10,7 +10,7 @@ param:
     k_i: 0.0
     k_i_limit: 100.0
     k_i_range: 1.0
-    k_p: 1.0
+    k_p: 10.0
     k_slew_max: 1200.0
   pid_torque:
     k_d: -0.01

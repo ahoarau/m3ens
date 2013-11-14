@@ -32,13 +32,10 @@ proto_install:
 	
 lib_LTLIBRARIES = libm3enscontrollers.la 
 
-libm3enscontrollers_la_LIBADD = -lprotobuf -lm3base -lorocos-kdl -lm3hardware -lm3chains -lm3toolbox -lyaml-cpp -lXmlRpc -lros -lroslib $(PROTOBUF_LIBS) $(YAMLCPP_LIBS) $(EIGEN2_LIBS) 
+libm3enscontrollers_la_LIBADD = -lprotobuf -lm3base -lorocos-kdl -lm3hardware -lm3chains -lm3toolbox -lyaml-cpp -lm3robots $(PROTOBUF_LIBS) $(YAMLCPP_LIBS) $(EIGEN2_LIBS) 
 
 libm3enscontrollers_la_LDFLAGS = -version-info 0:1:0 -module \
-	-L$(ros_dir)/core/roscpp/lib \
-	-L$(ros_dir)/core/roslib/lib \
-	-L$(ros_dir)/core/rosconsole/lib \
-	-L$(ros_dir)/3rdparty/xmlrpcpp/lib \
+	-L$(ros_dir)/lib \
 	-L$(rtai_lib)
     
 libm3enscontrollers_la_CPPFLAGS =  -I$(rtai_inc) -I$(m3ens_dir) -I$(m3inc_dir)/shared_mem -I$(m3inc_dir)/chains -I$(m3inc_dir)/toolbox \
@@ -46,20 +43,8 @@ libm3enscontrollers_la_CPPFLAGS =  -I$(rtai_inc) -I$(m3ens_dir) -I$(m3inc_dir)/s
 	-ffast-math -pipe \
 	-I$(top_srcdir)/ros/m3ens_ros/msg_gen/cpp/include \
 	-I$(top_srcdir)/ros/m3ens_ros/srv_gen/cpp/include \
-	-I/opt/ros/cturtle/stacks/m3_msgs/srv_gen/cpp/include \
-	-I/opt/ros/cturtle/stacks/m3_msgs/msg_gen/cpp/include \
-	-I$(ros_dir)/core/roscpp/include \
-	-I$(ros_dir)/core/roslib/include \
-	-I$(ros_dir)/core/rosconsole/include \
-	-I$(ros_dir)/core/roslib/msg_gen/cpp/include \
-	-I$(ros_dir)/3rdparty/xmlrpcpp/src \
-	-I/usr/local/include/m3rt/base/ \
-	-I/opt/ros/cturtle/stacks/geometry/tf/include \
-	-I/opt/ros/cturtle/stacks/common_msgs/geometry_msgs/msg_gen/cpp/include/ \
-	-I/opt/ros/cturtle/stacks/geometry/bullet/include/ \
-	-I/opt/ros/cturtle/stacks/geometry/tf/msg_gen/cpp/include/ \
-	-I/opt/ros/cturtle/stacks/geometry/tf_conversions/include/ \
-	-I/opt/ros/cturtle/stacks/common_msgs/geometry_msgs/msg_gen/cpp/include/geometry_msgs/
+	-I$(ros_dir)/include \
+	-I/usr/local/include/m3rt/base/
 	    	
 libm3enscontrollers_la_SOURCES = \
 	factory_proxy.cpp \

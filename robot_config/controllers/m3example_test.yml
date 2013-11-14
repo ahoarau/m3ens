@@ -1,0 +1,11 @@
+name: m3exemple_test
+humanoid: m3humanoid_right_arm_head_mr12
+command:
+  fx: 000.0
+  fy: 0.0
+  fz: 8000.0
+param:
+  max_fx: 20000.0
+  max_fy: 20000.0
+  max_fz: 20000.0
+

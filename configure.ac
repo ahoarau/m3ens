@@ -37,7 +37,7 @@ AM_CONDITIONAL([RTAI], [test x$rtai = xtrue])
 AC_SUBST(RTAI_DIR,[/usr/realtime-2.6.32.11-rtai-3.8.1])
 
 #TODO: have autoconf find correct ros dir
-AC_SUBST(ROS_DIR,[/opt/ros/cturtle/])
+AC_SUBST(ROS_DIR,[/opt/ros/groovy])
 
 #------------------------------------------------------------------------------
 # Eigen

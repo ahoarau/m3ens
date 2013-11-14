@@ -5,4 +5,7 @@ build
 .Trash*
 *.pyc
 *~
-*_temps.yml
+*.kde*
+.libs
+*temps.yml
+.cache

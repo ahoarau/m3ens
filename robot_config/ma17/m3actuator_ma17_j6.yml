@@ -57,16 +57,16 @@ calib:
     thermal_time_constant_motor: 108.0
     thermal_time_constant_winding: 8.1
     torque_constant: 49.0
+    use_old_temp_values: true
     winding_inductance: 7.73
     winding_resistance: 13.7
-    use_old_temp_values: true       
   theta:
     cb_bias: 213.94982603918697
     cb_scale: -1.0
     name: ContElec VertX13
     type: vertx_14bit
   torque:
-    cb_bias: -10.464
+    cb_bias: -10.341501237392427
     cb_inv_torque:
     - 1.0
     - 0.0
@@ -80,7 +80,7 @@ calib:
     cutoff_freq: 100
     order: 3
     type: diff_butterworth
-calibration_date: Mon May 13 08:39:03 2013
+calibration_date: Tue Aug 20 13:47:40 2013
 description: bmw_v1.0
 ec_component: m3actuator_ec_ma17_j6
 ignore_bounds: 0

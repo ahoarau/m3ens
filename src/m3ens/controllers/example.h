@@ -7,7 +7,6 @@
 #include "m3ens/controllers/example.pb.h"
 #include "m3/chains/arm.h"
 #include "m3/robots/humanoid.h"
-
 namespace m3ens
 {
 	using namespace std;
@@ -17,7 +16,7 @@ namespace m3ens
 class M3Example : public m3rt::M3Component
 {
 	public:
-		M3Example(): m3rt::M3Component(ROBOT_PRIORITY),bot(NULL){RegisterVersion("default",DEFAULT);}
+		M3Example(): m3rt::M3Component(MAX_PRIORITY),bot(NULL){RegisterVersion("default",DEFAULT);}
 		google::protobuf::Message * GetCommand(){return &command;}
 		google::protobuf::Message * GetStatus(){return &status;}
 		google::protobuf::Message * GetParam(){return &param;}

@@ -2,12 +2,16 @@
 
 #define INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION
 #include "example.pb.h"
+
+#include <algorithm>
+
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
+// @@protoc_insertion_point(includes)
 
 namespace {
 
@@ -152,7 +156,8 @@ const int M3ExampleStatus::kBaseFieldNumber;
 const int M3ExampleStatus::kFooFieldNumber;
 #endif  // !_MSC_VER
 
-M3ExampleStatus::M3ExampleStatus() {
+M3ExampleStatus::M3ExampleStatus()
+  : ::google::protobuf::Message() {
   SharedCtor();
 }
 
@@ -160,7 +165,8 @@ void M3ExampleStatus::InitAsDefaultInstance() {
   base_ = const_cast< ::M3BaseStatus*>(&::M3BaseStatus::default_instance());
 }
 
-M3ExampleStatus::M3ExampleStatus(const M3ExampleStatus& from) {
+M3ExampleStatus::M3ExampleStatus(const M3ExampleStatus& from)
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
 }
@@ -182,6 +188,11 @@ void M3ExampleStatus::SharedDtor() {
   }
 }
 
+void M3ExampleStatus::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
 const ::google::protobuf::Descriptor* M3ExampleStatus::descriptor() {
   protobuf_AssignDescriptorsOnce();
   return M3ExampleStatus_descriptor_;
@@ -199,7 +210,7 @@ M3ExampleStatus* M3ExampleStatus::New() const {
 
 void M3ExampleStatus::Clear() {
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (_has_bit(0)) {
+    if (has_base()) {
       if (base_ != NULL) base_->::M3BaseStatus::Clear();
     }
     foo_ = 0;
@@ -216,26 +227,29 @@ bool M3ExampleStatus::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .M3BaseStatus base = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_base()));
+        } else {
           goto handle_uninterpreted;
         }
-        DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-             input, mutable_base()));
         if (input->ExpectTag(17)) goto parse_foo;
         break;
       }
       
       // optional double foo = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+         parse_foo:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &foo_)));
+          set_has_foo();
+        } else {
           goto handle_uninterpreted;
         }
-       parse_foo:
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &foo_));
-        _set_bit(1);
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -258,20 +272,14 @@ bool M3ExampleStatus::MergePartialFromCodedStream(
 
 void M3ExampleStatus::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  ::google::protobuf::uint8* raw_buffer = output->GetDirectBufferForNBytesAndAdvance(_cached_size_);
-  if (raw_buffer != NULL) {
-    M3ExampleStatus::SerializeWithCachedSizesToArray(raw_buffer);
-    return;
-  }
-  
   // optional .M3BaseStatus base = 1;
-  if (_has_bit(0)) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageNoVirtual(
+  if (has_base()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, this->base(), output);
   }
   
   // optional double foo = 2;
-  if (_has_bit(1)) {
+  if (has_foo()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->foo(), output);
   }
   
@@ -284,14 +292,14 @@ void M3ExampleStatus::SerializeWithCachedSizes(
 ::google::protobuf::uint8* M3ExampleStatus::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // optional .M3BaseStatus base = 1;
-  if (_has_bit(0)) {
+  if (has_base()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         1, this->base(), target);
   }
   
   // optional double foo = 2;
-  if (_has_bit(1)) {
+  if (has_foo()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->foo(), target);
   }
   
@@ -324,7 +332,9 @@ int M3ExampleStatus::ByteSize() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
@@ -343,10 +353,10 @@ void M3ExampleStatus::MergeFrom(const ::google::protobuf::Message& from) {
 void M3ExampleStatus::MergeFrom(const M3ExampleStatus& from) {
   GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from._has_bit(0)) {
+    if (from.has_base()) {
       mutable_base()->::M3BaseStatus::MergeFrom(from.base());
     }
-    if (from._has_bit(1)) {
+    if (from.has_foo()) {
       set_foo(from.foo());
     }
   }
@@ -397,14 +407,16 @@ const int M3ExampleParam::kMaxFyFieldNumber;
 const int M3ExampleParam::kMaxFzFieldNumber;
 #endif  // !_MSC_VER
 
-M3ExampleParam::M3ExampleParam() {
+M3ExampleParam::M3ExampleParam()
+  : ::google::protobuf::Message() {
   SharedCtor();
 }
 
 void M3ExampleParam::InitAsDefaultInstance() {
 }
 
-M3ExampleParam::M3ExampleParam(const M3ExampleParam& from) {
+M3ExampleParam::M3ExampleParam(const M3ExampleParam& from)
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
 }
@@ -426,6 +438,11 @@ void M3ExampleParam::SharedDtor() {
   }
 }
 
+void M3ExampleParam::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
 const ::google::protobuf::Descriptor* M3ExampleParam::descriptor() {
   protobuf_AssignDescriptorsOnce();
   return M3ExampleParam_descriptor_;
@@ -459,41 +476,47 @@ bool M3ExampleParam::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional double max_fx = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &max_fx_)));
+          set_has_max_fx();
+        } else {
           goto handle_uninterpreted;
         }
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &max_fx_));
-        _set_bit(0);
         if (input->ExpectTag(17)) goto parse_max_fy;
         break;
       }
       
       // optional double max_fy = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+         parse_max_fy:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &max_fy_)));
+          set_has_max_fy();
+        } else {
           goto handle_uninterpreted;
         }
-       parse_max_fy:
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &max_fy_));
-        _set_bit(1);
         if (input->ExpectTag(25)) goto parse_max_fz;
         break;
       }
       
       // optional double max_fz = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+         parse_max_fz:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &max_fz_)));
+          set_has_max_fz();
+        } else {
           goto handle_uninterpreted;
         }
-       parse_max_fz:
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &max_fz_));
-        _set_bit(2);
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -516,24 +539,18 @@ bool M3ExampleParam::MergePartialFromCodedStream(
 
 void M3ExampleParam::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  ::google::protobuf::uint8* raw_buffer = output->GetDirectBufferForNBytesAndAdvance(_cached_size_);
-  if (raw_buffer != NULL) {
-    M3ExampleParam::SerializeWithCachedSizesToArray(raw_buffer);
-    return;
-  }
-  
   // optional double max_fx = 1;
-  if (_has_bit(0)) {
+  if (has_max_fx()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->max_fx(), output);
   }
   
   // optional double max_fy = 2;
-  if (_has_bit(1)) {
+  if (has_max_fy()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->max_fy(), output);
   }
   
   // optional double max_fz = 3;
-  if (_has_bit(2)) {
+  if (has_max_fz()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->max_fz(), output);
   }
   
@@ -546,17 +563,17 @@ void M3ExampleParam::SerializeWithCachedSizes(
 ::google::protobuf::uint8* M3ExampleParam::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // optional double max_fx = 1;
-  if (_has_bit(0)) {
+  if (has_max_fx()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->max_fx(), target);
   }
   
   // optional double max_fy = 2;
-  if (_has_bit(1)) {
+  if (has_max_fy()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->max_fy(), target);
   }
   
   // optional double max_fz = 3;
-  if (_has_bit(2)) {
+  if (has_max_fz()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->max_fz(), target);
   }
   
@@ -592,7 +609,9 @@ int M3ExampleParam::ByteSize() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
@@ -611,13 +630,13 @@ void M3ExampleParam::MergeFrom(const ::google::protobuf::Message& from) {
 void M3ExampleParam::MergeFrom(const M3ExampleParam& from) {
   GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from._has_bit(0)) {
+    if (from.has_max_fx()) {
       set_max_fx(from.max_fx());
     }
-    if (from._has_bit(1)) {
+    if (from.has_max_fy()) {
       set_max_fy(from.max_fy());
     }
-    if (from._has_bit(2)) {
+    if (from.has_max_fz()) {
       set_max_fz(from.max_fz());
     }
   }
@@ -670,14 +689,16 @@ const int M3ExampleCommand::kFyFieldNumber;
 const int M3ExampleCommand::kFzFieldNumber;
 #endif  // !_MSC_VER
 
-M3ExampleCommand::M3ExampleCommand() {
+M3ExampleCommand::M3ExampleCommand()
+  : ::google::protobuf::Message() {
   SharedCtor();
 }
 
 void M3ExampleCommand::InitAsDefaultInstance() {
 }
 
-M3ExampleCommand::M3ExampleCommand(const M3ExampleCommand& from) {
+M3ExampleCommand::M3ExampleCommand(const M3ExampleCommand& from)
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
 }
@@ -700,6 +721,11 @@ void M3ExampleCommand::SharedDtor() {
   }
 }
 
+void M3ExampleCommand::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
 const ::google::protobuf::Descriptor* M3ExampleCommand::descriptor() {
   protobuf_AssignDescriptorsOnce();
   return M3ExampleCommand_descriptor_;
@@ -734,55 +760,63 @@ bool M3ExampleCommand::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bool enable = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &enable_)));
+          set_has_enable();
+        } else {
           goto handle_uninterpreted;
         }
-        DO_(::google::protobuf::internal::WireFormatLite::ReadBool(
-              input, &enable_));
-        _set_bit(0);
         if (input->ExpectTag(17)) goto parse_fx;
         break;
       }
       
       // optional double fx = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+         parse_fx:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &fx_)));
+          set_has_fx();
+        } else {
           goto handle_uninterpreted;
         }
-       parse_fx:
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &fx_));
-        _set_bit(1);
         if (input->ExpectTag(25)) goto parse_fy;
         break;
       }
       
       // optional double fy = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+         parse_fy:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &fy_)));
+          set_has_fy();
+        } else {
           goto handle_uninterpreted;
         }
-       parse_fy:
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &fy_));
-        _set_bit(2);
         if (input->ExpectTag(33)) goto parse_fz;
         break;
       }
       
       // optional double fz = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) !=
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+         parse_fz:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &fz_)));
+          set_has_fz();
+        } else {
           goto handle_uninterpreted;
         }
-       parse_fz:
-        DO_(::google::protobuf::internal::WireFormatLite::ReadDouble(
-              input, &fz_));
-        _set_bit(3);
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -805,29 +839,23 @@ bool M3ExampleCommand::MergePartialFromCodedStream(
 
 void M3ExampleCommand::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  ::google::protobuf::uint8* raw_buffer = output->GetDirectBufferForNBytesAndAdvance(_cached_size_);
-  if (raw_buffer != NULL) {
-    M3ExampleCommand::SerializeWithCachedSizesToArray(raw_buffer);
-    return;
-  }
-  
   // optional bool enable = 1;
-  if (_has_bit(0)) {
+  if (has_enable()) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->enable(), output);
   }
   
   // optional double fx = 2;
-  if (_has_bit(1)) {
+  if (has_fx()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->fx(), output);
   }
   
   // optional double fy = 3;
-  if (_has_bit(2)) {
+  if (has_fy()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->fy(), output);
   }
   
   // optional double fz = 4;
-  if (_has_bit(3)) {
+  if (has_fz()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(4, this->fz(), output);
   }
   
@@ -840,22 +868,22 @@ void M3ExampleCommand::SerializeWithCachedSizes(
 ::google::protobuf::uint8* M3ExampleCommand::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
   // optional bool enable = 1;
-  if (_has_bit(0)) {
+  if (has_enable()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->enable(), target);
   }
   
   // optional double fx = 2;
-  if (_has_bit(1)) {
+  if (has_fx()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->fx(), target);
   }
   
   // optional double fy = 3;
-  if (_has_bit(2)) {
+  if (has_fy()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->fy(), target);
   }
   
   // optional double fz = 4;
-  if (_has_bit(3)) {
+  if (has_fz()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(4, this->fz(), target);
   }
   
@@ -896,7 +924,9 @@ int M3ExampleCommand::ByteSize() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
@@ -915,16 +945,16 @@ void M3ExampleCommand::MergeFrom(const ::google::protobuf::Message& from) {
 void M3ExampleCommand::MergeFrom(const M3ExampleCommand& from) {
   GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from._has_bit(0)) {
+    if (from.has_enable()) {
       set_enable(from.enable());
     }
-    if (from._has_bit(1)) {
+    if (from.has_fx()) {
       set_fx(from.fx());
     }
-    if (from._has_bit(2)) {
+    if (from.has_fy()) {
       set_fy(from.fy());
     }
-    if (from._has_bit(3)) {
+    if (from.has_fz()) {
       set_fz(from.fz());
     }
   }
@@ -968,3 +998,7 @@ void M3ExampleCommand::Swap(M3ExampleCommand* other) {
   return metadata;
 }
 
+
+// @@protoc_insertion_point(namespace_scope)
+
+// @@protoc_insertion_point(global_scope)

@@ -7,6 +7,8 @@ factory_rt_libs:
   - /usr/local/lib/libm3robots.so
   - /usr/local/lib/libm3robot_ctrl.so
   - /usr/local/lib/libm3vehicles.so
+#  - /usr/local/lib/libm3enscontrollers.so
+
 factory_py_libs:
   - /usr/local/lib/python2.7/dist-packages/m3/m3meka_factory_proxy.py
 
@@ -15,6 +17,8 @@ sys_test: ens
 right_hand_name: m3hand_mh16
 
 rt_components:
+#  controllers:
+#    m3example_test: m3example
   pwr:
     m3pwr_pwr028: m3pwr
     m3pwr_pwr029: m3pwr
@@ -156,4 +160,6 @@ ec_components:
   pwr:
     m3pwr_ec_pwr028: m3pwr_ec
     m3pwr_ec_pwr029: m3pwr_ec
+
+right_hand: m3hand_mh16
 

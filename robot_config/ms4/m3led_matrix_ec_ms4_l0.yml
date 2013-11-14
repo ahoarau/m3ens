@@ -7,6 +7,6 @@ num_rows: 8
 num_cols: 16
 version: iss
 param:
-  slew_rate: 2000
+  slew_rate: 4000
 firmware: m3_controller_ledmdrv_s2r1
 invert_image: 1

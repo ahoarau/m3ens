@@ -14,8 +14,8 @@ calib:
       order: 3
       type: diff_butterworth
     thetadotdot_df:
-      cutoff_freq: 80
-      order: 1
+      cutoff_freq: 20#8#80
+      order: 3
       type: diff_butterworth
     type: df_chain
   current:
@@ -59,16 +59,16 @@ calib:
     thermal_time_constant_motor: 1120.0
     thermal_time_constant_winding: 41.6
     torque_constant: 30.2
+    use_old_temp_values: true
     winding_inductance: 0.0823
     winding_resistance: 0.317
-    use_old_temp_values: true       
   theta:
     cb_bias: 210.477934444241
     cb_scale: -1.0
     name: ContElec VertX13
     type: vertx_14bit
   torque:
-    cb_bias: 48.464209620691584
+    cb_bias: 48.490261730092016
     cb_inv_torque:
     - 0.19906441758846333
     - 8547.959837654184
@@ -82,7 +82,7 @@ calib:
     cutoff_freq: 200
     order: 3
     type: diff_butterworth
-calibration_date: Mon May 13 08:56:53 2013
+calibration_date: Tue Aug 20 13:47:40 2013
 description: max2_v2.0
 ec_component: m3actuator_ec_ma17_j0
 ignore_bounds: 0

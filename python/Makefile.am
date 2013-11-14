@@ -8,8 +8,8 @@
 #	m3ens/example.py
 
 dist_bin_SCRIPTS = \
-	scripts/m3ens_demo_head.py\
-	scripts/m3ens_demo_led_matrix.py\
-	scripts/m3ens_demo_postures.py
+	scripts/demos/m3ens_demo_head.py\
+	scripts/demos/m3ens_demo_led_matrix.py\
+	scripts/demos/m3ens_demo_postures.py
 
 #	scripts/m3ens_example.py

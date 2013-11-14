@@ -32,7 +32,6 @@ import m3.led_matrix_ec as m3l
 import m3.head_s2csp_ctrl as m3csp
 import m3.unit_conversion as m3u
 #import m3.toolbox_ros as m3tr
-import Numeric as nu
 import m3.pwr
 import math
 import random
