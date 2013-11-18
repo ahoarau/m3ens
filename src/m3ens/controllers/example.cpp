@@ -103,7 +103,8 @@ void M3Example::StepCommand()
 // 		  ((M3HumanoidCommand*)bot->GetCommand())->mutable_right_arm()->set_q_stiffness(i, 1.0);
   		  bot->SetModeTorqueGc(RIGHT_ARM,i);
 // 		bot->SetModeThetaGc(RIGHT_ARM,i);-->Fonctionne
-  		  bot->SetTorque_mNm(RIGHT_ARM,i,tq[i]);
+// //   		  bot->SetTorque_mNm(RIGHT_ARM,i,tq[i]);
+		  
 // 		  bot->SetTorque_mNm(RIGHT_ARM,0,10000.0);
 //  		  bot->SetThetaDeg(RIGHT_ARM,i,0.0);
   		  bot->SetStiffness(RIGHT_ARM,i,1.0);
