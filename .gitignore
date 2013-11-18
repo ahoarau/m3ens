@@ -9,3 +9,7 @@ build
 .libs
 *temps.yml
 .cache
+*.pb.h
+*.pb.cpp
+*.la
+*.lo
