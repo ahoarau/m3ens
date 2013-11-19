@@ -30,7 +30,7 @@ param:
   min_q: 0.0
   min_q_pad: 100.0
 #pwm_calibration_down: 110
-pwm_calibration_down: 128
+pwm_calibration_down: 75
 pwm_calibration_up: 400
 transmission:
   act_name: m3actuator_mz2_j0
