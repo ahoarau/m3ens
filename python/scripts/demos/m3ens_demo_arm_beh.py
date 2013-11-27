@@ -33,7 +33,7 @@ import math
 import random
 import m3.humanoid
 import yaml
-
+import numpy as nu
 # ######################################################  
 postures={'right_arm':{}}
 postures['right_arm']['stow']=[-26.5, 8.7, 5.0, 129.6, 80.6, -1.5, -7.6]

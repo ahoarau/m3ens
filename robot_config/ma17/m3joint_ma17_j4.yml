@@ -1,6 +1,6 @@
 actuator_component: m3actuator_ma17_j4
 brake: none
-calibration_date: Tue Nov 12 14:53:14 2013
+calibration_date: Wed Nov 27 14:33:54 2013
 control_component: m3ctrl_simple_ma17_j4
 name: m3joint_ma17_j4
 param:
