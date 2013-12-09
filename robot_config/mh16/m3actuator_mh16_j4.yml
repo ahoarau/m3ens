@@ -66,7 +66,7 @@ calib:
     torque_constant: 19.600000000000001
     winding_inductance: 1.3100000000000001
     winding_resistance: 53.299999999999997
-    use_old_temp_values: true       
+    use_old_temp_values: true    
   theta:
     cb_bias: -15.800000000000001
     cb_scale: 1.0

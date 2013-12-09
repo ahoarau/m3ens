@@ -1,11 +1,12 @@
 actuator_component: m3actuator_mh16_j3
 brake: none
-calibration_date: Mon Nov 18 14:39:26 2013
+calibration_date: Fri Jun 10 00:22:55 2011
+control_component: m3ctrl_simple_ma17_j0
 name: m3joint_mh16_j3
 param:
   kq_d: 0.0
-  kq_g: -0.6
-  kq_i: -0.1
+  kq_g: -0.59999999999999998
+  kq_i: -0.10000000000000001
   kq_i_limit: 80.0
   kq_i_range: 45.0
   kq_p: -12.0
