@@ -1,11 +1,10 @@
-actuator_component: m3actuator_ma17_j1
+actuator_component: m3actuator_ma20_j3
 brake: none
-calibration_date: Mon May 13 09:34:22 2013
-control_component: m3ctrl_simple_ma17_j1
-name: m3joint_ma17_j1
+calibration_date: Sat Jan 11 17:33:19 2014
+control_component: m3ctrl_simple_ma20_j3
+name: m3joint_ma20_j3
 param:
-  kq_d: -100.0
-  kq_d_pose: -130.0
+  kq_d: -15.0
   kq_g: 1.0
   kq_i: 0.0
   kq_i_limit: 0.0
@@ -16,13 +15,13 @@ param:
   kt_i_limit: 0.0
   kt_i_range: 0.0
   kt_p: 0.0
-  max_q: 150.12012085698592
+  max_q: 133.50970518220106
   max_q_pad: 0.0
-  max_q_slew_rate: 50.0 #250.0 #50.0
-  min_q: -23.760120856985914
+  max_q_slew_rate: 50.0
+  min_q: -0.5097051822010599
   min_q_pad: 0.0
 transmission:
-  act_name: m3actuator_ma17_j1
+  act_name: m3actuator_ma20_j3
   qj_to_qa:
   - 1.0
   qs_to_qj:
