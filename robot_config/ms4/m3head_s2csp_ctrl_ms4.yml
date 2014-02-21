@@ -23,4 +23,4 @@ param:
   - 3.0
   - 0.0
   - 0.0
-robot_component: m3humanoid_right_arm_head_mr12
+robot_component: m3humanoid_right_left_arm_head_mr12
