@@ -111,8 +111,8 @@ rt_components:
     m3joint_ma20_j5: m3joint
     m3joint_ma20_j6: m3joint
     m3arm_ma20: m3arm
-    m3dynamatics_left_ma20: m3dynamatics
-#    m3dynamatics_left_h2R5_ma20: m3dynamatics
+#    m3dynamatics_left_ma20: m3dynamatics
+    m3dynamatics_left_h2R5_ma20: m3dynamatics
   mh28:
     m3actuator_mh28_j0: m3actuator_virtual
     m3actuator_mh28_j1: m3actuator_virtual
