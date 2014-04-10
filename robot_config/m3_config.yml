@@ -44,7 +44,7 @@ rt_components:
     m3joint_mh16_j4: m3joint
     m3hand_mh16: m3hand
   mb2:
-#    m3omnibase_shm_mb2: m3omnibase_shm
+    m3omnibase_shm_mb2: m3omnibase_shm
     m3joint_array_mb2: m3joint_array
     m3actuator_mb2_j0: m3actuator_virtual
     m3joint_mb2_j0: m3joint
