@@ -13,3 +13,5 @@ build
 *.pb.cpp
 *.la
 *.lo
+autom4te.cache/
+

@@ -119,5 +119,5 @@ param:
   payload_mass: 0.83799999999999997
 #  payload_mass: 1.0
   use_accelerations: false
-  use_velocities: false
+  use_velocities: true
 version: iss
