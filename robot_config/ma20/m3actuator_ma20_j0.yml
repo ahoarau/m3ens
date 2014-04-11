@@ -14,8 +14,8 @@ calib:
       order: 3
       type: diff_butterworth
     thetadotdot_df:
-      cutoff_freq: 80
-      order: 1
+      cutoff_freq: 20
+      order: 3
       type: diff_butterworth
     type: df_chain
   current:
@@ -68,7 +68,7 @@ calib:
     name: ContElec VertX13
     type: vertx_14bit
   torque:
-    cb_bias: -92.8188
+    cb_bias: -93.03864282587047
     cb_inv_torque:
     - 0.19906441758846333
     - 8547.959837654184
@@ -82,7 +82,7 @@ calib:
     cutoff_freq: 200
     order: 3
     type: diff_butterworth
-calibration_date: Thu Feb 20 14:26:29 2014
+calibration_date: Fri Apr 11 17:41:02 2014
 description: max2_v2.0
 ec_component: m3actuator_ec_ma20_j0
 ignore_bounds: 0
