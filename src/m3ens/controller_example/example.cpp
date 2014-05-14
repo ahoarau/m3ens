@@ -37,7 +37,6 @@ bool M3Example::ReadConfig(const char * filename)
 	if (!M3Component::ReadConfig(filename))
 		return false;
 	doc["humanoid"] >> bot_name;
-	cout<<"reading hum :"<<bot_name<<endl;
 	return true;
 }
 
