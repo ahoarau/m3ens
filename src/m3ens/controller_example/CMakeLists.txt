@@ -6,7 +6,7 @@ find_package(RTAI REQUIRED)
 find_package(M3rt REQUIRED)
 find_package(M3 REQUIRED toolbox chains robots hardware)
 find_package(Boost REQUIRED)
-find_package(Eigen3 REQUIRED)
+find_package(Eigen3 3.2 REQUIRED)
 find_package(Protobuf REQUIRED)
 find_package(OROCOS-KDL REQUIRED)
 
