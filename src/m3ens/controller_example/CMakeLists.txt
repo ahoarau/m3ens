@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8)
 
 project(controller_example) 
 
-
-
 find_package(RTAI REQUIRED)
 find_package(M3rt REQUIRED)
 find_package(M3 REQUIRED toolbox chains robots hardware)
@@ -11,13 +9,6 @@ find_package(Boost REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Protobuf REQUIRED)
 find_package(OROCOS-KDL REQUIRED)
-
-
-# Stay in local repos
-set(CMAKE_BINARY_OUTPUT_DIRECTORY  ${M3ENS_BINARY_OUTPUT_DIRECTORY})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${M3ENS_LIBRARY_OUTPUT_DIRECTORY})
-
-
 
 # Start Protobuf
 # Get all your protofiles
@@ -46,14 +37,12 @@ set(M3_PREFIX /usr/local)
 
 # Include dirs to look for
 include_directories(
-    ${M3ENS_INCLUDE_DIR}
     ${M3RT_INCLUDE_DIR}
     ${RTAI_INCLUDE_DIR}
     ${EIGEN3_INCLUDE_DIR}
     ${PROTOBUF_INCLUDE_DIR}
     ${M3_INCLUDE_DIR}
     ${KDL_INCLUDE_DIRS}
-    ${CMAKE_BINARY_DIR}/src # Include this directory for the generated protobufs headers
 )
 
 
@@ -65,6 +54,7 @@ set( ALL_SRCS
 factory_proxy.cpp
 example.cpp
 )
+
 # Set your headers here
 set( ALL_HDRS
 example.h
