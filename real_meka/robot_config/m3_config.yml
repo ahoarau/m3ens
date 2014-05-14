@@ -7,7 +7,7 @@ factory_rt_libs:
   - /usr/local/lib/libm3robots.so
   - /usr/local/lib/libm3robot_ctrl.so
   - /usr/local/lib/libm3vehicles.so
-#  - /usr/local/lib/libm3enscontrollers.so
+#  - /usr/local/lib/m3ens/libm3enscontrollers.so
 
 factory_py_libs:
   - /usr/local/lib/python2.7/dist-packages/m3/m3meka_factory_proxy.py
