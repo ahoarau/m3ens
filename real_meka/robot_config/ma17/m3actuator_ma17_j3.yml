@@ -79,7 +79,7 @@ calib:
     name: ContElec VertX13
     type: sea_vertx_14bit
   torquedot_df:
-    cutoff_freq: 100
+    cutoff_freq: 80
     order: 3
     type: diff_butterworth
 calibration_date: Tue Aug 20 13:47:40 2013
