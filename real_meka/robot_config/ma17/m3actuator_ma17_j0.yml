@@ -14,7 +14,7 @@ calib:
       order: 3
       type: diff_butterworth
     thetadotdot_df:
-      cutoff_freq: 20 #8#80
+      cutoff_freq: 20
       order: 3
       type: diff_butterworth
     type: df_chain
@@ -78,10 +78,7 @@ calib:
     - -16.07
     name: ContElec VertX13
     type: sea_vertx_14bit
-  torquedot_df:
-    cutoff_freq: 200
-    order: 3
-    type: diff_butterworth
+
 calibration_date: Tue Aug 20 13:47:40 2013
 description: max2_v2.0
 ec_component: m3actuator_ec_ma17_j0
@@ -89,6 +86,10 @@ ignore_bounds: 0
 joint_component: m3joint_ma17_j0
 name: m3actuator_ma17_j0
 param:
+  torquedot_df:
+    cutoff_freq: 80
+    order: 3
+    type: diff_butterworth
   max_amp_current: 20000.0
   max_amp_temp: 100.0
   max_i: 9.0
