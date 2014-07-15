@@ -4,7 +4,7 @@ param:
   controller:
     current_limit: 1000.0
   pid_theta:
-    k_d: 0.02
+    k_d: 0.099
     k_des_max: 160
     k_des_min: -160
     k_i: 0.0
@@ -16,10 +16,10 @@ param:
     k_d: -0.01
     k_des_max: 10000.0
     k_des_min: -10000.0
-    k_i: 0.000
-    k_i_limit: 1.0
-    k_i_range: 15000.0
-    k_p: -0.5 # -1.2
+    k_i: -0.0005
+    k_i_limit: 0.5
+    k_i_range: 1.0
+    k_p: -0.75
     k_slew_max: 0.0
   traj_current:
     amp: 2.0
