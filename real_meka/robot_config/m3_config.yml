@@ -17,6 +17,14 @@ sys_test: ens
 right_hand: m3hand_mh16
 left_hand: m3hand_mh28
 
+ndof_chains:
+  right_arm: 7
+  left_arm: 7
+  torso: 0
+  head: 8
+  right_hand: 5
+  left_hand: 5
+  
 rt_components:
 #  controllers:
 #    m3example_test: m3example

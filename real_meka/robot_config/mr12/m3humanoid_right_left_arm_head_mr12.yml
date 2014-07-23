@@ -79,5 +79,9 @@ chains:
     - 0.0
     - 0.077850000000000003
     chain_component: m3head_ms4
+  right_hand:
+    chain_component: m3hand_mh16
+  left_hand:
+    chain_component: m3hand_mh28
 name: m3humanoid_right_left_arm_head_mr12
 pwr_component: m3pwr_pwr028
