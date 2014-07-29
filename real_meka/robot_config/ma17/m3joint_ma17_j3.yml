@@ -4,12 +4,12 @@ calibration_date: Thu Feb 21 05:05:56 2013
 control_component: m3ctrl_simple_ma17_j3
 name: m3joint_ma17_j3
 param:
-  kq_d: -15.0
+  kq_d: -100.0
   kq_g: 1.0
-  kq_i: 0.0
-  kq_i_limit: 0.0
-  kq_i_range: 0.0
-  kq_p: -1000.0
+  kq_i: -20.5
+  kq_i_limit: 350.0
+  kq_i_range: 1500.0
+  kq_p: -1500.0
   kt_d: 0.0
   kt_i: 0.0
   kt_i_limit: 0.0
@@ -17,8 +17,8 @@ param:
   kt_p: 0.0
   max_q: 132.59778428859184
   max_q_pad: 0.0
-  max_q_slew_rate: 50.0
-  min_q: 0.4022157114081608
+  max_q_slew_rate: 50
+  min_q: 0.402
   min_q_pad: 0.0
 transmission:
   act_name: m3actuator_ma17_j3

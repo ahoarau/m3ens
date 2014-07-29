@@ -10,7 +10,7 @@ calib:
       order: 3
       type: butterworth
     thetadot_df:
-      cutoff_freq: 80
+      cutoff_freq: 10
       order: 3
       type: diff_butterworth
     thetadotdot_df:

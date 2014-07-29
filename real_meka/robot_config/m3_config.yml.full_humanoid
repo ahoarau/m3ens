@@ -219,7 +219,7 @@ ec_components:
     m3actuator_ec_ma17_j4: m3actuator_ec
     m3actuator_ec_ma17_j5: m3actuator_ec
     m3actuator_ec_ma17_j6: m3actuator_ec
-    #m3loadx6_ec_ma17_l0: m3loadx6_ec
+    m3loadx6_ec_ma17_l0: m3loadx6_ec
   pwr:
     m3pwr_ec_pwr028: m3pwr_ec
     m3pwr_ec_pwr029: m3pwr_ec
