@@ -57,7 +57,6 @@ rt_components:
    - m3joint_ma17_j6: m3joint
    - m3arm_ma17: m3arm
    - m3dynamatics_right_ma17: m3dynamatics
-#    m3dynamatics_right_h2R4_fts_ma17: m3dynamatics
 #    m3loadx6_ma17_l0: m3loadx6
 - ma20:
    - m3actuator_ma20_j0: m3actuator
@@ -82,7 +81,7 @@ rt_components:
    - m3joint_ma20_j5: m3joint
    - m3joint_ma20_j6: m3joint
    - m3arm_ma20: m3arm
-   - m3dynamatics_left_h2R5_ma20: m3dynamatics
+   - m3dynamatics_left_ma20: m3dynamatics
 #     m3loadx6_ma17_l0: m3loadx6 
 - mz2:
    - m3actuator_mz2_j0: m3actuator

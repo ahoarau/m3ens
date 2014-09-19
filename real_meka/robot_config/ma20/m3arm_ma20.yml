@@ -1,5 +1,4 @@
-# dynamatics_component: m3dynamatics_left_ma20
-dynamatics_component: m3dynamatics_left_h2R5_ma20
+dynamatics_component: m3dynamatics_left_ma20
 joint_components:
   J0: m3joint_ma20_j0
   J1: m3joint_ma20_j1
