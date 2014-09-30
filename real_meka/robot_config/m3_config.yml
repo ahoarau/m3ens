@@ -160,6 +160,7 @@ rt_components:
    - m3head_ms4: m3head
    - m3dynamatics_s2r1_ens_ms4: m3dynamatics
    - m3head_s2csp_ctrl_ms4: m3head_s2csp_ctrl
+- ledm:
    - m3led_matrix_ec_shm_ms4_l0: m3led_matrix_ec_shm
 - mr12:
    - m3humanoid_right_left_arm_head_mr12: m3humanoid
@@ -194,8 +195,9 @@ ec_components:
    - m3actuator_ec_mh16_j2: m3actuator_ec
    - m3actuator_ec_mh16_j3: m3actuator_ec
    - m3actuator_ec_mh16_j4: m3actuator_ec
-- ms4:
+- ledm:
    - m3led_matrix_ec_ms4_l0: m3led_matrix_ec
+- ms4:
    - m3actuator_ec_ms4_j0: m3actuator_ec
    - m3actuator_ec_ms4_j1: m3actuator_ec
    - m3actuator_ec_ms4_j2: m3actuator_ec
