@@ -3,5 +3,5 @@ ndof_chains:
   left_arm: 7
   torso: 0
   head: 8
-  right_hand: 5
-  left_hand: 5
+  right_hand: 16
+  left_hand: 16
