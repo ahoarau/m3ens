@@ -1,6 +1,6 @@
 actuator_component: m3actuator_ms4_j7
 brake: none
-calibration_date: Fri Nov 26 11:47:11 2010
+calibration_date: Fri Oct 10 13:03:27 2014
 control_component: m3ctrl_simple_ms4_j7
 name: m3joint_ms4_j7
 param:
@@ -23,12 +23,12 @@ param:
 transmission:
   act_name: m3actuator_ms4_j7
   qj_to_qa:
-  - 1.0
+  - -1.0
   qs_to_qj:
-  - 1.0
+  - -1.0
   tqj_to_tqa:
-  - 1.0
+  - -1.0
   tqs_to_tqj:
-  - 1.0
+  - -1.0
   type: gear
 version: iq
