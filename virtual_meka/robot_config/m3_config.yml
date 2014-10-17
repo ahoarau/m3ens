@@ -14,6 +14,8 @@ right_hand: m3hand_mh16
 rt_components:
 #  - controllers: 
 #    - m3example_test: m3example
+- sys:
+  - m3monitor_m0: m3monitor
 - ma17:
   -  m3actuator_ma17_j0: m3actuator_virtual
   -  m3actuator_ma17_j1: m3actuator_virtual
