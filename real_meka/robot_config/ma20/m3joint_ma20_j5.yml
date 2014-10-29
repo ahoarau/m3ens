@@ -20,6 +20,7 @@ param:
   max_q_slew_rate: 100.0
   min_q: -60.14283098333639
   min_q_pad: 0.0
+  kq_p_tq_gm: 1.0
 transmission:
   act_name: m3actuator_ma20_j5
   cpj_name: m3joint_ma20_j6

@@ -19,6 +19,7 @@ param:
   max_q_slew_rate: 200.0
   min_q: 1.2335660471762822e-05
   min_q_pad: 0.0
+  kq_p_tq_gm: 1.0
 transmission:
   act_name: m3actuator_mh16_j4
   qj_to_qa:

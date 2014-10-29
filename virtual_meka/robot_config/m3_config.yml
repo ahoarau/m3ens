@@ -16,6 +16,10 @@ rt_components:
 #    - m3example_test: m3example
 - sys:
   - m3monitor_m0: m3monitor
+- mz2:
+   - m3actuator_mz2_j0: m3actuator_virtual
+   - m3joint_mz2_j0: m3joint_zlift_virtual
+   - m3joint_shm_mz2_j0: m3joint_zlift_shm
 - ma17:
   -  m3actuator_ma17_j0: m3actuator_virtual
   -  m3actuator_ma17_j1: m3actuator_virtual
@@ -31,13 +35,13 @@ rt_components:
   -  m3ctrl_simple_ma17_j4: m3ctrl_simple
   -  m3ctrl_simple_ma17_j5: m3ctrl_simple
   -  m3ctrl_simple_ma17_j6: m3ctrl_simple
-  -  m3joint_ma17_j0: m3joint
-  -  m3joint_ma17_j1: m3joint
-  -  m3joint_ma17_j2: m3joint
-  -  m3joint_ma17_j3: m3joint
-  -  m3joint_ma17_j4: m3joint
-  -  m3joint_ma17_j5: m3joint
-  -  m3joint_ma17_j6: m3joint
+  -  m3joint_ma17_j0: m3joint_virtual
+  -  m3joint_ma17_j1: m3joint_virtual
+  -  m3joint_ma17_j2: m3joint_virtual
+  -  m3joint_ma17_j3: m3joint_virtual
+  -  m3joint_ma17_j4: m3joint_virtual
+  -  m3joint_ma17_j5: m3joint_virtual
+  -  m3joint_ma17_j6: m3joint_virtual
   -  m3dynamatics_right_ma17: m3dynamatics
   -  m3arm_ma17: m3arm
 - ma20:
@@ -55,13 +59,13 @@ rt_components:
   -  m3ctrl_simple_ma20_j4: m3ctrl_simple
   -  m3ctrl_simple_ma20_j5: m3ctrl_simple
   -  m3ctrl_simple_ma20_j6: m3ctrl_simple
-  -  m3joint_ma20_j0: m3joint
-  -  m3joint_ma20_j1: m3joint
-  -  m3joint_ma20_j2: m3joint
-  -  m3joint_ma20_j3: m3joint
-  -  m3joint_ma20_j4: m3joint
-  -  m3joint_ma20_j5: m3joint
-  -  m3joint_ma20_j6: m3joint
+  -  m3joint_ma20_j0: m3joint_virtual
+  -  m3joint_ma20_j1: m3joint_virtual
+  -  m3joint_ma20_j2: m3joint_virtual
+  -  m3joint_ma20_j3: m3joint_virtual
+  -  m3joint_ma20_j4: m3joint_virtual
+  -  m3joint_ma20_j5: m3joint_virtual
+  -  m3joint_ma20_j6: m3joint_virtual
   -  m3dynamatics_left_h2R5_ma20: m3dynamatics
   -  m3arm_ma20: m3arm
 - mb2:
@@ -73,14 +77,14 @@ rt_components:
   -  m3actuator_mb2_j5: m3actuator_virtual
   -  m3actuator_mb2_j6: m3actuator_virtual
   -  m3actuator_mb2_j7: m3actuator_virtual
-  -  m3joint_mb2_j0: m3joint
-  -  m3joint_mb2_j1: m3joint
-  -  m3joint_mb2_j2: m3joint
-  -  m3joint_mb2_j3: m3joint
-  -  m3joint_mb2_j4: m3joint
-  -  m3joint_mb2_j5: m3joint
-  -  m3joint_mb2_j6: m3joint
-  -  m3joint_mb2_j7: m3joint
+  -  m3joint_mb2_j0: m3joint_virtual
+  -  m3joint_mb2_j1: m3joint_virtual
+  -  m3joint_mb2_j2: m3joint_virtual
+  -  m3joint_mb2_j3: m3joint_virtual
+  -  m3joint_mb2_j4: m3joint_virtual
+  -  m3joint_mb2_j5: m3joint_virtual
+  -  m3joint_mb2_j6: m3joint_virtual
+  -  m3joint_mb2_j7: m3joint_virtual
   -  m3joint_array_mb2: m3joint_array
   -  m3omnibase_mb2: m3omnibase
   -  m3omnibase_shm_mb2: m3omnibase_shm
@@ -90,11 +94,11 @@ rt_components:
   -  m3actuator_mh16_j2: m3actuator_virtual
   -  m3actuator_mh16_j3: m3actuator_virtual
   -  m3actuator_mh16_j4: m3actuator_virtual
-  -  m3joint_mh16_j0: m3joint
-  -  m3joint_mh16_j1: m3joint
-  -  m3joint_mh16_j2: m3joint
-  -  m3joint_mh16_j3: m3joint
-  -  m3joint_mh16_j4: m3joint
+  -  m3joint_mh16_j0: m3joint_virtual
+  -  m3joint_mh16_j1: m3joint_virtual
+  -  m3joint_mh16_j2: m3joint_virtual
+  -  m3joint_mh16_j3: m3joint_virtual
+  -  m3joint_mh16_j4: m3joint_virtual
   -  m3hand_mh16: m3hand
 - mh28:
   -  m3actuator_mh28_j0: m3actuator_virtual
@@ -102,11 +106,11 @@ rt_components:
   -  m3actuator_mh28_j2: m3actuator_virtual
   -  m3actuator_mh28_j3: m3actuator_virtual
   -  m3actuator_mh28_j4: m3actuator_virtual
-  -  m3joint_mh28_j0: m3joint
-  -  m3joint_mh28_j1: m3joint
-  -  m3joint_mh28_j2: m3joint
-  -  m3joint_mh28_j3: m3joint
-  -  m3joint_mh28_j4: m3joint
+  -  m3joint_mh28_j0: m3joint_virtual
+  -  m3joint_mh28_j1: m3joint_virtual
+  -  m3joint_mh28_j2: m3joint_virtual
+  -  m3joint_mh28_j3: m3joint_virtual
+  -  m3joint_mh28_j4: m3joint_virtual
   -  m3hand_mh28: m3hand
 - ms4:
   -  m3actuator_ms4_j0: m3actuator_virtual
@@ -125,14 +129,14 @@ rt_components:
   -  m3ctrl_simple_ms4_j5: m3ctrl_simple
   -  m3ctrl_simple_ms4_j6: m3ctrl_simple
   -  m3ctrl_simple_ms4_j7: m3ctrl_simple
-  -  m3joint_ms4_j0: m3joint
-  -  m3joint_ms4_j1: m3joint
-  -  m3joint_ms4_j2: m3joint
-  -  m3joint_ms4_j3: m3joint
-  -  m3joint_ms4_j4: m3joint
-  -  m3joint_ms4_j5: m3joint
-  -  m3joint_ms4_j6: m3joint
-  -  m3joint_ms4_j7: m3joint
+  -  m3joint_ms4_j0: m3joint_virtual
+  -  m3joint_ms4_j1: m3joint_virtual
+  -  m3joint_ms4_j2: m3joint_virtual
+  -  m3joint_ms4_j3: m3joint_virtual
+  -  m3joint_ms4_j4: m3joint_virtual
+  -  m3joint_ms4_j5: m3joint_virtual
+  -  m3joint_ms4_j6: m3joint_virtual
+  -  m3joint_ms4_j7: m3joint_virtual
   -  m3dynamatics_s2r1_ens_ms4: m3dynamatics
   -  m3head_ms4: m3head
   -  m3head_s2csp_ctrl_ms4: m3head_s2csp_ctrl

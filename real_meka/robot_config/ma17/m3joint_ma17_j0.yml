@@ -11,6 +11,7 @@ param:
   kq_i_limit: 1000.0
   kq_i_range: 0.0
   kq_p: -2000.0
+  kq_p_tq_gm: 1.0
   kqdot_d: -0.0
   kqdot_i: 0.0
   kqdot_i_limit: 1000.0
