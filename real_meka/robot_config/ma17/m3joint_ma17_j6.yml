@@ -12,10 +12,10 @@ param:
   kq_p: -200.0
   kq_p_tq_gm: 1.0
   kqdot_d: -0.0
-  kqdot_i: -0.5
-  kqdot_i_limit: 1000.0
-  kqdot_i_range: 150000.0
-  kqdot_p: -30.0
+  kqdot_i: -0.02
+  kqdot_i_limit: 100.0
+  kqdot_i_range: 150.0
+  kqdot_p: -15.0
   kt_d: 0.0
   kt_i: 0.0
   kt_i_limit: 0.0
