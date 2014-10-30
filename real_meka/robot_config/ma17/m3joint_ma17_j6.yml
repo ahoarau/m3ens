@@ -10,6 +10,12 @@ param:
   kq_i_limit: 0.0
   kq_i_range: 0.0
   kq_p: -200.0
+  kq_p_tq_gm: 1.0
+  kqdot_d: -0.0
+  kqdot_i: -0.5
+  kqdot_i_limit: 1000.0
+  kqdot_i_range: 150000.0
+  kqdot_p: -30.0
   kt_d: 0.0
   kt_i: 0.0
   kt_i_limit: 0.0
@@ -17,10 +23,9 @@ param:
   kt_p: 0.0
   max_q: 60.966855887200154
   max_q_pad: 0.0
-  max_q_slew_rate: 100 #100.0
+  max_q_slew_rate: 100
   min_q: -60.966855887200154
   min_q_pad: 0.0
-  kq_p_tq_gm: 1.0
 transmission:
   act_name: m3actuator_ma17_j6
   cpj_name: m3joint_ma17_j5

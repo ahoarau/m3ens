@@ -4,6 +4,11 @@ calibration_date: Sat Jan 11 17:35:03 2014
 control_component: m3ctrl_simple_ma20_j6
 name: m3joint_ma20_j6
 param:
+  kqdot_d: -0.0
+  kqdot_i: 0.0
+  kqdot_i_limit: 1000.0
+  kqdot_i_range: 150000.0
+  kqdot_p: -100.0
   kq_d: -2.0
   kq_g: 1.3
   kq_i: 0.0
