@@ -7,6 +7,7 @@ factory_rt_libs:
   - /usr/local/lib/libm3robots.so
   - /usr/local/lib/libm3robot_ctrl.so
   - /usr/local/lib/libm3vehicles.so
+  - /usr/local/lib/libmeka_omnibase_control.so
 #  - /usr/local/lib/m3ens/libm3enscontrollers.so
 
 factory_py_libs:
@@ -100,8 +101,12 @@ rt_components:
    - m3joint_mh16_j4: m3joint
    - m3hand_mh16: m3hand    
 - mb2:
-   - m3omnibase_shm_mb2: m3omnibase_shm
-   - m3omnibase_mb2: m3omnibase
+   
+   # Old controller:
+   # - m3omnibase_shm_mb2: m3omnibase_shm
+   # - m3omnibase_mb2: m3omnibase
+   # Velocity-based controller:
+   - meka_omnibase_control_mb2: meka_omnibase_control
    - m3joint_array_mb2: m3joint_array
    - m3actuator_mb2_j0: m3actuator
    - m3joint_mb2_j0: m3joint
