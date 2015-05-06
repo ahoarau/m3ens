@@ -30,6 +30,10 @@ param:
     phid_max: [6.0, 6.0, 6.0, 6.0]
     phidd_max: [6.0, 6.0, 6.0, 6.0]
 
+    # We allow casters to go slighter over the maximum speed temporarily (+50%),
+    # but disable them if they go over.
+    bdmax_ratio: 1.5
+
     tq_max:     2000.0
     tq_sum_max: 3000.0 
 
