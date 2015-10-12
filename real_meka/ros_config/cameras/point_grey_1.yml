@@ -3,7 +3,7 @@ video_mode: 800x600_yuv422
 iso_speed: 400
 frame_rate: 15
 frame_id: pg1
-camera_info_url: file:///home/meka/mekabot/m3ens/ros_config/cameras/pg1_800x600_calib.yml
+camera_info_url: file:///home/meka/mekabot/m3ens/real_meka/ros_config/cameras/pg1_800x600_calib.yml
 #Right camera
 # set some feature values:
 #auto_gamma: 3           # Manual
