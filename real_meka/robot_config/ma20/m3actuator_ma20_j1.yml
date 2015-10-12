@@ -68,7 +68,7 @@ calib:
     name: ContElec VertX13
     type: vertx_14bit
   torque:
-    cb_bias: -76.70590846193831
+    cb_bias: -75.09255 #-76.70590846193831
     cb_inv_torque:
     - 0.19906441758846333
     - 8547.959837654184

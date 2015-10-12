@@ -11,7 +11,7 @@ param:
   kqdot_p: -400.0
   kq_d: -100.0
   kq_d_pose: -130.0
-  kq_g: 1.1
+  kq_g: 1.0
   kq_i: 0.0
   kq_i_limit: 0.0
   kq_i_range: 0.0
